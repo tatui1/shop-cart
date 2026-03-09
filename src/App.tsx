@@ -1,9 +1,12 @@
+import { Route, Routes } from 'react-router'
+import { HomePage } from './pages/HomePage/HomePage'
+
 function App() {
 
   return (
-   <div>
-    app
-   </div>
+    <Routes>
+      <Route path="/" element={<HomePage/>} />
+    </Routes>
   )
 }
 
