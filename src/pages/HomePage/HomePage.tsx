@@ -23,7 +23,7 @@ export const HomePage = () => {
 
   return (
     <Container sx={{ mt: 4 }}>
-      <Typography variant="h4" sx={{ mb: 4, color: 'rgb(25, 118, 210)' }}>
+      <Typography variant="h4" sx={{ mb: 4, color: 'rgb(222, 90, 255)' }}>
         Список корзин
       </Typography>
 
@@ -45,11 +45,11 @@ export const HomePage = () => {
               <TableCell sx={{ color: 'rgb(46, 125, 50)', fontWeight: 'bold' }}>{cart.discountedTotal}$</TableCell>
               <TableCell>{cart.totalProducts} шт.</TableCell>
               <TableCell align="right">
-                <Box sx={{ display: 'flex', gap: 1, justifyContent: 'flex-end' }}>
+                <Box sx={{ display: 'flex', gap: 1, justifyContent: 'flex-end'}}>
                   <Button size="small" variant="outlined" onClick={() => navigate(`/cart/${cart.id}`)}>
                     Корзина
                   </Button>
-                  <Button size="small" variant="contained" sx={{ backgroundColor: 'rgb(2, 136, 209)' }} onClick={() => navigate(`/user/${cart.userId}`)}>
+                  <Button size="small" variant="contained" sx={{ backgroundColor: 'rgb(222, 90, 255)' }} onClick={() => navigate(`/user/${cart.userId}`)}>
                     Профиль
                   </Button>
                 </Box>
