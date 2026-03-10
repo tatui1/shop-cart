@@ -23,12 +23,12 @@ export const HomePage = () => {
 
   return (
     <Container sx={{ mt: 4 }}>
-      <Typography variant="h4" sx={{ mb: 4, color: '#1976d2' }}>
+      <Typography variant="h4" sx={{ mb: 4, color: 'rgb(25, 118, 210)' }}>
         Список корзин
       </Typography>
 
       <Table size="medium">
-        <TableHead sx={{ backgroundColor: '#f5faff' }}> 
+        <TableHead sx={{ backgroundColor: 'rgb(245, 250, 255)' }}> 
           <TableRow>
             <TableCell><b>ID</b></TableCell>
             <TableCell><b>Сумма</b></TableCell>
@@ -42,14 +42,14 @@ export const HomePage = () => {
             <TableRow key={cart.id}>
               <TableCell>{cart.id}</TableCell>
               <TableCell>{cart.total}$</TableCell>
-              <TableCell sx={{ color: '#2e7d32', fontWeight: 'bold' }}>{cart.discountedTotal}$</TableCell>
+              <TableCell sx={{ color: 'rgb(46, 125, 50)', fontWeight: 'bold' }}>{cart.discountedTotal}$</TableCell>
               <TableCell>{cart.totalProducts} шт.</TableCell>
               <TableCell align="right">
                 <Box sx={{ display: 'flex', gap: 1, justifyContent: 'flex-end' }}>
                   <Button size="small" variant="outlined" onClick={() => navigate(`/cart/${cart.id}`)}>
                     Корзина
                   </Button>
-                  <Button size="small" variant="contained" sx={{ backgroundColor: '#0288d1' }} onClick={() => navigate(`/user/${cart.userId}`)}>
+                  <Button size="small" variant="contained" sx={{ backgroundColor: 'rgb(2, 136, 209)' }} onClick={() => navigate(`/user/${cart.userId}`)}>
                     Профиль
                   </Button>
                 </Box>
